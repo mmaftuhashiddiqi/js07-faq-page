@@ -1,0 +1,7 @@
+Warna
+background color: #F1F5F8
+question card color: #FFFFFF
+font color: #C59D5F
+
+Font
+gatau

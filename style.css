@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.faq-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F5F8;
+    overflow: auto;
+}
+
+.title {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #C59D5F;
+}
+
+.content {
+    width: 45vw;
+    height: 10vh;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cdcdcd;
+    transition: height 0.5s;
+}
+
+.content-down {
+    height: 26vh;
+}
+
+.content:hover {
+    background-color: #ffffffcc;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 2.5px;
+}
+
+button {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: 2px solid #C59D5F;
+    border-radius: 2px;
+    color: #C59D5F;
+    font-size: 1.5em;
+    background-color: transparent;
+    line-height: 0;
+    z-index: 1;
+}
+
+button:hover {
+    transition: all 0.5s;
+    rotate: 180deg;
+    cursor: pointer;
+}
+
+button:active {
+    border: 3px solid #ba7000;
+    color: #ba7000;
+}
+
+hr {
+    width: calc(45vw - 40px);
+    margin-top: -30px;
+    margin-left: 20px;
+    border: 1.3px solid #C59D5F;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.answer {
+    height: 15vh;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: auto;
+    transition: all 0.5s;
+    transform: translateY(-60px);
+    opacity: 0;
+    z-index: -1;
+}
+
+.down {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+}
+
+p {
+    line-height: 20px;
+}
+
+
+/* Responsive Brakepoint */
+
+@media screen and (max-width: 950px) {
+    .content {
+        width: 60vw;
+    }
+
+    hr {
+        width: calc(60vw - 40px);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    h2 {
+        font-size: 2em;
+    }
+    
+    .content {
+        width: 75vw;
+    }
+
+    h4 {
+        font-size: 0.8em;
+    }
+
+    hr {
+        width: calc(75vw - 40px);
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        width: 90vw;
+    }
+
+    hr {
+        width: calc(90vw - 40px);
+    }
+}
